@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  nav2_humble:
+    image: osrf/ros:humble-desktop-full
+    container_name: nav2_humble
+
+    # 🖼️ GUI and X11 Forwarding
+    environment:
+      - DISPLAY=${DISPLAY}
+      - XAUTHORITY=${XAUTHORITY}
+      - QT_X11_NO_MITSHM=1
+
+    # ✅ Use NVIDIA runtime for GPU support — no manual GL mounts!
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+
+    # 🗂️ Mount your local workspace (./src → /root/nav2_ws/src)
+    volumes:
+      - ./src:/root/nav2_ws/src
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ${HOME}/.Xauthority:/root/.Xauthority:rw
+      - /dev:/dev
+
+    # 🧱 System access for devices (LIDAR, camera, etc.)
+    privileged: true
+    network_mode: host
+
+    # 🖥️ Interactive shell
+    stdin_open: true
+    tty: true
+
+    # 📁 Default working directory
+    working_dir: /root/nav2_ws
