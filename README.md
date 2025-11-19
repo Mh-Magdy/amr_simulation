@@ -84,3 +84,17 @@ ros2 launch ugv_gazebo bringup.launch.py
 
 ---
 
+---
+
+## Navigation
+
+Launch the navigation stack based on SLAM-toolbox:
+
+```bash
+export UGV_MODEL=ugv_rover
+ros2 launch ugv_gazebo slam_nav.launch.py
+```
+
+---
+
+
