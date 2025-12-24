@@ -34,6 +34,8 @@ apt-get update
 Install required tools and libraries:
 
 ```bash
+pip3 install ros2-numpy
+pip3 install  ultralytics
 apt install -y python3-pip
 apt install -y alsa-utils
 apt install -y python3-colcon-argcomplete
