@@ -95,6 +95,20 @@ export UGV_MODEL=ugv_rover
 ros2 launch ugv_gazebo slam_nav.launch.py
 ```
 
+
+## Inspection Manager
+
+```bash
+ros2 launch  inspection_manager inspection_manager.launch.py
+```
+
+
+## 3D detection
+
+make sure to put best.pt model weights in the workspace dir  ~/nav2_ws/    , the second model shall be downloaded automatically 
+```bash
+ros2 launch  segmentation_3d  segment_3d.launch.py
+```
 ---
 
 

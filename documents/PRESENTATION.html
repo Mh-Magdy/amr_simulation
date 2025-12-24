@@ -1,0 +1,834 @@
+<!DOCTYPE html><html><head>
+      <title>PRESENTATION</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////home/momagdii/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.20/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      <script type="text/javascript" src="file:////home/momagdii/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.20/crossnote/dependencies/mermaid/mermaid.min.js" charset="UTF-8"></script>
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="autonomous-truck-inspection-system">Autonomous Truck Inspection System </h1>
+<h2 id="technical-architecture--system-design">Technical Architecture &amp; System Design </h2>
+<p><strong>Document Version:</strong> 1.0<br>
+<strong>Date:</strong> December 2025<br>
+<strong>Purpose:</strong> Executive Technical Presentation</p>
+<hr>
+<h2 id="executive-summary">Executive Summary </h2>
+<p>This document presents the technical architecture of an autonomous truck inspection system built on ROS 2 Humble. The system enables a mobile robot to autonomously navigate to parked trucks, detect them using AI vision models, and systematically inspect all four wheels of each truck. The solution integrates computer vision, 3D perception, and autonomous navigation to deliver a complete inspection workflow.</p>
+<hr>
+<h2 id="1-system-architecture-overview">1. System Architecture Overview </h2>
+<h3 id="11-high-level-system-block-diagram">1.1 High-Level System Block Diagram </h3>
+<div class="mermaid">graph TB
+    subgraph "Sensors"
+        CAM[OAK-D Depth Camera]
+        LIDAR[2D LiDAR]
+        PT[PT Camera]
+    end
+    
+    subgraph "Vision Pipeline"
+        ULTR[Ultralytics Segmentation Node]
+        PROC[Segmentation Processor Node]
+    end
+    
+    subgraph "Mission Control"
+        INSP[Inspection Manager Node]
+    end
+    
+    subgraph "Navigation Stack"
+        NAV2[Nav2 Navigation Stack]
+        SLAM[SLAM System]
+    end
+    
+    subgraph "Robot Platform"
+        BASE[Robot Base Controller]
+        TF[TF Transform Tree]
+    end
+    
+    CAM --&gt;|RGB Images| ULTR
+    ULTR --&gt;|Segmentation Masks| PROC
+    CAM --&gt;|Point Cloud| PROC
+    PROC --&gt;|3D Bounding Boxes| INSP
+    LIDAR --&gt;|Laser Scan| SLAM
+    SLAM --&gt;|Map + Pose| NAV2
+    INSP --&gt;|Navigation Goals| NAV2
+    NAV2 --&gt;|Velocity Commands| BASE
+    BASE --&gt;|Odometry| TF
+    TF --&gt;|Transforms| INSP
+    TF --&gt;|Transforms| PROC
+    INSP --&gt;|Mode Commands| ULTR
+    
+    style INSP fill:#4a90e2,color:#fff
+    style ULTR fill:#50c878,color:#fff
+    style PROC fill:#50c878,color:#fff
+    style NAV2 fill:#ff6b6b,color:#fff
+</div><p><strong>Key Components:</strong></p>
+<ul>
+<li><strong>Vision Pipeline</strong>: AI-powered object detection and 3D localization</li>
+<li><strong>Mission Control</strong>: State machine orchestrating the inspection mission</li>
+<li><strong>Navigation Stack</strong>: Autonomous path planning and execution</li>
+<li><strong>Robot Platform</strong>: Physical robot with sensors and actuators</li>
+</ul>
+<hr>
+<h2 id="2-package-architecture">2. Package Architecture </h2>
+<h3 id="21-system-component-diagram">2.1 System Component Diagram </h3>
+<div class="mermaid">graph LR
+    subgraph "segment_3d Package"
+        A[ultralytics_node.py&lt;br/&gt;YOLO Segmentation]
+        B[segmentation_processor_node&lt;br/&gt;3D Bounding Box Generation]
+    end
+    
+    subgraph "inspection_manager Package"
+        C[inspection_manager_node.py&lt;br/&gt;Mission State Machine]
+    end
+    
+    subgraph "External Systems"
+        D[Nav2&lt;br/&gt;Navigation]
+        E[Camera&lt;br/&gt;RGB + Depth]
+        F[TF Tree&lt;br/&gt;Transforms]
+    end
+    
+    E --&gt;|RGB Image| A
+    A --&gt;|ObjectsSegment| B
+    E --&gt;|PointCloud2| B
+    B --&gt;|BoundingBoxes3d| C
+    C --&gt;|PoseStamped| D
+    C --&gt;|String Mode| A
+    F &lt;--&gt;|Transform Lookups| C
+    F &lt;--&gt;|Transform Lookups| B
+    
+    style A fill:#90EE90
+    style B fill:#90EE90
+    style C fill:#87CEEB
+    style D fill:#FFB6C1
+</div><hr>
+<h2 id="3-segmentation-3d-package">3. Segmentation 3D Package </h2>
+<h3 id="31-package-overview">3.1 Package Overview </h3>
+<p>The <code>segment_3d</code> package provides AI-powered 3D object detection by combining 2D semantic segmentation with depth information. It consists of two main nodes working in tandem.</p>
+<h3 id="32-component-architecture">3.2 Component Architecture </h3>
+<div class="mermaid">graph TD
+    subgraph "Ultralytics Segmentation Node"
+        INPUT[RGB Image Input]
+        MODEL1[Navigation Model&lt;br/&gt;yolov8m-seg.pt]
+        MODEL2[Inspection Model&lt;br/&gt;best.pt]
+        MODE_SWITCH{Mode Selector}
+        SEG[YOLO Segmentation]
+        OUTPUT1[ObjectsSegment Message]
+        OUTPUT2[Annotated Image]
+    end
+    
+    INPUT --&gt; MODE_SWITCH
+    MODE_SWITCH --&gt;|navigation| MODEL1
+    MODE_SWITCH --&gt;|inspection| MODEL2
+    MODEL1 --&gt; SEG
+    MODEL2 --&gt; SEG
+    SEG --&gt; OUTPUT1
+    SEG --&gt; OUTPUT2
+    
+    style MODEL1 fill:#FFD700
+    style MODEL2 fill:#FFD700
+    style MODE_SWITCH fill:#FF6347
+</div><h3 id="33-segmentation-processor-flow">3.3 Segmentation Processor Flow </h3>
+<div class="mermaid">flowchart TD
+    START[Receive ObjectsSegment] --&gt; CHECK{Has PointCloud?}
+    CHECK --&gt;|No| WAIT[Wait for PointCloud]
+    WAIT --&gt; CHECK
+    CHECK --&gt;|Yes| TRANSFORM[Transform PointCloud to Working Frame]
+    TRANSFORM --&gt; EXTRACT[Extract Object Points from Mask]
+    EXTRACT --&gt; FILTER[Filter Ground Plane]
+    FILTER --&gt; CLUSTER[Euclidean Clustering]
+    CLUSTER --&gt; LARGEST[Select Largest Cluster]
+    LARGEST --&gt; BBOX[Calculate 3D Bounding Box]
+    BBOX --&gt; PUBLISH[Publish BoundingBoxes3d]
+    
+    style START fill:#90EE90
+    style PUBLISH fill:#87CEEB
+</div><h3 id="34-data-flow-segmentation-pipeline">3.4 Data Flow: Segmentation Pipeline </h3>
+<div class="mermaid">sequenceDiagram
+    participant CAM as Camera
+    participant ULTR as Ultralytics Node
+    participant MODE as Mode Topic
+    participant PROC as Processor Node
+    participant INSP as Inspection Manager
+    
+    CAM-&gt;&gt;ULTR: RGB Image (sensor_msgs/Image)
+    MODE-&gt;&gt;ULTR: Mode Command (navigation/inspection)
+    ULTR-&gt;&gt;ULTR: Switch Model Based on Mode
+    ULTR-&gt;&gt;ULTR: Run YOLO Segmentation
+    ULTR-&gt;&gt;PROC: ObjectsSegment (masks + classes)
+    CAM-&gt;&gt;PROC: PointCloud2 (depth data)
+    PROC-&gt;&gt;PROC: Transform to Working Frame
+    PROC-&gt;&gt;PROC: Extract 3D Points from Masks
+    PROC-&gt;&gt;PROC: Calculate Bounding Boxes
+    PROC-&gt;&gt;INSP: BoundingBoxes3d (3D coordinates)
+</div><h3 id="35-node-responsibilities">3.5 Node Responsibilities </h3>
+<h4 id="ultralytics-segmentation-node-ultralytics_nodepy">Ultralytics Segmentation Node (<code>ultralytics_node.py</code>) </h4>
+<p><strong>Purpose:</strong> Performs 2D semantic segmentation using YOLO models</p>
+<p><strong>Key Functions:</strong></p>
+<ul>
+<li>Loads two YOLO segmentation models:
+<ul>
+<li><strong>Navigation Model</strong> (<code>yolov8m-seg.pt</code>): Detects trucks for navigation</li>
+<li><strong>Inspection Model</strong> (<code>best.pt</code>): Detects wheels and truck parts for inspection</li>
+</ul>
+</li>
+<li>Dynamically switches between models based on mission phase</li>
+<li>Converts RGB images to segmentation masks</li>
+<li>Publishes pixel-level object masks with class labels</li>
+</ul>
+<p><strong>Inputs:</strong></p>
+<ul>
+<li><code>/camera/image_raw</code> (RGB images)</li>
+<li><code>/segmentation_mode</code> (mode command: "navigation" or "inspection")</li>
+</ul>
+<p><strong>Outputs:</strong></p>
+<ul>
+<li><code>/ultralytics/segmentation/objects_segment</code> (segmentation masks)</li>
+<li><code>/ultralytics/segmentation/image</code> (annotated visualization)</li>
+</ul>
+<h4 id="segmentation-processor-node-segmentation_processor_node">Segmentation Processor Node (<code>segmentation_processor_node</code>) </h4>
+<p><strong>Purpose:</strong> Converts 2D segmentation masks to 3D bounding boxes</p>
+<p><strong>Key Functions:</strong></p>
+<ul>
+<li>Subscribes to segmentation masks and point clouds</li>
+<li>Transforms point clouds to working coordinate frame</li>
+<li>Extracts 3D points corresponding to segmentation masks</li>
+<li>Filters ground plane using RANSAC</li>
+<li>Performs Euclidean clustering to separate objects</li>
+<li>Calculates axis-aligned 3D bounding boxes</li>
+<li>Publishes 3D bounding boxes in world coordinates</li>
+</ul>
+<p><strong>Inputs:</strong></p>
+<ul>
+<li><code>/ultralytics/segmentation/objects_segment</code> (2D masks)</li>
+<li><code>/camera/depth/points</code> or similar (PointCloud2)</li>
+</ul>
+<p><strong>Outputs:</strong></p>
+<ul>
+<li><code>/detections_3d</code> (BoundingBoxes3d with 3D coordinates)</li>
+<li>Debug markers and point clouds for visualization</li>
+</ul>
+<hr>
+<h2 id="4-inspection-manager-package">4. Inspection Manager Package </h2>
+<h3 id="41-package-overview">4.1 Package Overview </h3>
+<p>The <code>inspection_manager</code> package implements a finite state machine (FSM) that orchestrates the complete truck inspection mission. It coordinates navigation, vision detection, and wheel-by-wheel inspection.</p>
+<h3 id="42-state-machine-diagram">4.2 State Machine Diagram </h3>
+<div class="mermaid">stateDiagram-v2
+    [*] --&gt; IDLE: System Start
+    
+    IDLE --&gt; NAV_TO_TRUCK_STANDOFF: Load Trucks Config
+    
+    NAV_TO_TRUCK_STANDOFF --&gt; WAIT_TRUCK_BOX: Navigation Complete
+    
+    WAIT_TRUCK_BOX --&gt; TURN_IN_PLACE_TRUCK: Timeout (No Detection)
+    TURN_IN_PLACE_TRUCK --&gt; WAIT_TRUCK_BOX: Rotation Complete
+    WAIT_TRUCK_BOX --&gt; APPROACH_TRUCK: Truck Detected
+    
+    APPROACH_TRUCK --&gt; WAIT_WHEEL_BOX: Reached Truck
+    
+    WAIT_WHEEL_BOX --&gt; TURN_IN_PLACE_WHEEL: Timeout (No Detection)
+    TURN_IN_PLACE_WHEEL --&gt; WAIT_WHEEL_BOX: Rotation Complete
+    WAIT_WHEEL_BOX --&gt; INSPECT_WHEEL: Wheel Detected
+    
+    INSPECT_WHEEL --&gt; WAIT_WHEEL_BOX: Wheel Inspection Complete
+    INSPECT_WHEEL --&gt; NEXT_TRUCK: 4 Wheels Inspected
+    
+    WAIT_WHEEL_BOX --&gt; NEXT_TRUCK: Max Rotations Reached
+    
+    NEXT_TRUCK --&gt; NAV_TO_TRUCK_STANDOFF: More Trucks
+    NEXT_TRUCK --&gt; DONE: All Trucks Complete
+    
+    DONE --&gt; [*]
+</div><h3 id="43-state-descriptions">4.3 State Descriptions </h3>
+<table>
+<thead>
+<tr>
+<th>State</th>
+<th>Purpose</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>IDLE</strong></td>
+<td>Initial state</td>
+<td>Loads truck configuration file</td>
+</tr>
+<tr>
+<td><strong>NAV_TO_TRUCK_STANDOFF</strong></td>
+<td>Navigate to truck area</td>
+<td>Sends Nav2 goal to standoff position (2m from truck)</td>
+</tr>
+<tr>
+<td><strong>WAIT_TRUCK_BOX</strong></td>
+<td>Wait for truck detection</td>
+<td>Publishes "navigation" mode, listens for truck bounding boxes</td>
+</tr>
+<tr>
+<td><strong>TURN_IN_PLACE_TRUCK</strong></td>
+<td>Recovery rotation</td>
+<td>Rotates 45° if truck not detected, up to 8 attempts (360°)</td>
+</tr>
+<tr>
+<td><strong>APPROACH_TRUCK</strong></td>
+<td>Navigate to truck</td>
+<td>Moves to 0.5m offset from detected truck</td>
+</tr>
+<tr>
+<td><strong>WAIT_WHEEL_BOX</strong></td>
+<td>Wait for wheel detection</td>
+<td>Publishes "inspection" mode, listens for wheel bounding boxes</td>
+</tr>
+<tr>
+<td><strong>TURN_IN_PLACE_WHEEL</strong></td>
+<td>Recovery rotation</td>
+<td>Rotates 45° if wheel not detected</td>
+</tr>
+<tr>
+<td><strong>INSPECT_WHEEL</strong></td>
+<td>Navigate to wheel</td>
+<td>Moves to 0.4m offset from detected wheel</td>
+</tr>
+<tr>
+<td><strong>NEXT_TRUCK</strong></td>
+<td>Transition logic</td>
+<td>Increments truck index, resets wheel tracking</td>
+</tr>
+<tr>
+<td><strong>DONE</strong></td>
+<td>Mission complete</td>
+<td>All trucks inspected</td>
+</tr>
+</tbody>
+</table>
+<h3 id="44-mission-execution-sequence">4.4 Mission Execution Sequence </h3>
+<div class="mermaid">sequenceDiagram
+    participant CONFIG as Config File
+    participant INSP as Inspection Manager
+    participant NAV2 as Nav2
+    participant ULTR as Ultralytics Node
+    participant PROC as Processor Node
+    participant TF as TF Tree
+    
+    CONFIG-&gt;&gt;INSP: Load Truck Positions
+    INSP-&gt;&gt;INSP: State: IDLE → NAV_TO_TRUCK_STANDOFF
+    
+    INSP-&gt;&gt;NAV2: NavigateToPose Goal (Standoff)
+    NAV2--&gt;&gt;INSP: Navigation Result
+    INSP-&gt;&gt;INSP: State: WAIT_TRUCK_BOX
+    
+    INSP-&gt;&gt;ULTR: Publish "navigation" mode
+    ULTR-&gt;&gt;ULTR: Switch to Navigation Model
+    ULTR-&gt;&gt;PROC: ObjectsSegment (truck masks)
+    PROC-&gt;&gt;INSP: BoundingBoxes3d (truck detected)
+    
+    INSP-&gt;&gt;INSP: State: APPROACH_TRUCK
+    INSP-&gt;&gt;NAV2: NavigateToPose Goal (0.5m from truck)
+    NAV2--&gt;&gt;INSP: Navigation Result
+    
+    INSP-&gt;&gt;INSP: State: WAIT_WHEEL_BOX
+    INSP-&gt;&gt;ULTR: Publish "inspection" mode
+    ULTR-&gt;&gt;ULTR: Switch to Inspection Model
+    
+    loop For Each Wheel (1-4)
+        ULTR-&gt;&gt;PROC: ObjectsSegment (wheel masks)
+        PROC-&gt;&gt;INSP: BoundingBoxes3d (wheel detected)
+        INSP-&gt;&gt;INSP: Filter: Nearest un-inspected wheel
+        INSP-&gt;&gt;INSP: State: INSPECT_WHEEL
+        INSP-&gt;&gt;NAV2: NavigateToPose Goal (0.4m from wheel)
+        NAV2--&gt;&gt;INSP: Navigation Result
+        INSP-&gt;&gt;INSP: Mark wheel as inspected
+    end
+    
+    INSP-&gt;&gt;INSP: State: NEXT_TRUCK
+    Note over INSP: Repeat for all trucks
+</div><h3 id="45-wheel-detection-logic-flow">4.5 Wheel Detection Logic Flow </h3>
+<div class="mermaid">flowchart TD
+    START[Receive BoundingBoxes3d] --&gt; FILTER[Filter by Wheel Label]
+    FILTER --&gt; CHECK_ROBOT{Get Robot Pose}
+    CHECK_ROBOT --&gt;|Success| GET_POS[Robot Position]
+    CHECK_ROBOT --&gt;|Fail| USE_TRUCK[Use Truck Position]
+    GET_POS --&gt; FILTER_INSPECTED[Filter Out Inspected Wheels]
+    USE_TRUCK --&gt; FILTER_INSPECTED
+    FILTER_INSPECTED --&gt; FILTER_DISTANCE[Filter by Distance from Truck&lt;br/&gt;Max: 5.0m]
+    FILTER_DISTANCE --&gt; CHECK_COUNT{Un-inspected&lt;br/&gt;Wheels?}
+    CHECK_COUNT --&gt;|No| RETURN_NULL[Return None&lt;br/&gt;Trigger Rotation]
+    CHECK_COUNT --&gt;|Yes| SELECT_NEAREST[Select Nearest to Robot]
+    SELECT_NEAREST --&gt; STORE_POS[Store Position in&lt;br/&gt;inspected_wheel_positions]
+    STORE_POS --&gt; NAVIGATE[Navigate to Wheel]
+    
+    style START fill:#90EE90
+    style NAVIGATE fill:#87CEEB
+    style RETURN_NULL fill:#FF6347
+</div><h3 id="46-data-structures-and-state-tracking">4.6 Data Structures and State Tracking </h3>
+<div class="mermaid">classDiagram
+    class TruckInspectionManager {
+        -List~dict~ trucks
+        -int current_truck_idx
+        -MissionState current_state
+        -BoundingBox3d current_truck_box
+        -List~tuple~ inspected_wheel_positions
+        -float wait_start_time
+        -int rotation_attempts
+        -float initial_wait_yaw
+        +_load_trucks() List~dict~
+        +_tick() void
+        +_detection_cb() void
+        +_find_wheel_for_inspection() BoundingBox3d
+        +_dispatch_standoff_goal() void
+        +_dispatch_box_goal() void
+        +_dispatch_rotation_goal() void
+    }
+    
+    class MissionState {
+        &lt;&lt;enumeration&gt;&gt;
+        IDLE
+        NAV_TO_TRUCK_STANDOFF
+        WAIT_TRUCK_BOX
+        TURN_IN_PLACE_TRUCK
+        APPROACH_TRUCK
+        WAIT_WHEEL_BOX
+        TURN_IN_PLACE_WHEEL
+        INSPECT_WHEEL
+        NEXT_TRUCK
+        DONE
+    }
+    
+    class BoundingBox3d {
+        +string object_name
+        +float64 probability
+        +float64 xmin, xmax
+        +float64 ymin, ymax
+        +float64 zmin, zmax
+    }
+    
+    TruckInspectionManager --&gt; MissionState
+    TruckInspectionManager --&gt; BoundingBox3d
+</div><hr>
+<h2 id="5-system-integration-flow">5. System Integration Flow </h2>
+<h3 id="51-complete-mission-flow">5.1 Complete Mission Flow </h3>
+<div class="mermaid">flowchart TB
+    subgraph "Initialization"
+        A[Load Config] --&gt; B[Initialize Nodes]
+        B --&gt; C[Load YOLO Models]
+    end
+    
+    subgraph "Truck Navigation Phase"
+        D[Navigate to Standoff] --&gt; E[Switch to Navigation Model]
+        E --&gt; F[Detect Truck]
+        F --&gt; G{Detected?}
+        G --&gt;|No| H[Rotate 45°]
+        H --&gt; F
+        G --&gt;|Yes| I[Approach Truck]
+    end
+    
+    subgraph "Wheel Inspection Phase"
+        I --&gt; J[Switch to Inspection Model]
+        J --&gt; K[Detect Wheels]
+        K --&gt; L{Un-inspected&lt;br/&gt;Wheel?}
+        L --&gt;|No| M[Rotate 45°]
+        M --&gt; K
+        L --&gt;|Yes| N[Navigate to Wheel]
+        N --&gt; O[Mark as Inspected]
+        O --&gt; P{4 Wheels&lt;br/&gt;Done?}
+        P --&gt;|No| K
+        P --&gt;|Yes| Q[Next Truck]
+    end
+    
+    subgraph "Completion"
+        Q --&gt; R{More Trucks?}
+        R --&gt;|Yes| D
+        R --&gt;|No| S[Mission Complete]
+    end
+    
+    C --&gt; D
+    
+    style A fill:#90EE90
+    style S fill:#87CEEB
+    style E fill:#FFD700
+    style J fill:#FFD700
+</div><h3 id="52-model-switching-mechanism">5.2 Model Switching Mechanism </h3>
+<div class="mermaid">sequenceDiagram
+    participant INSP as Inspection Manager
+    participant MODE_TOPIC as /segmentation_mode
+    participant ULTR as Ultralytics Node
+    participant MODEL1 as Navigation Model
+    participant MODEL2 as Inspection Model
+    
+    Note over INSP: State: WAIT_TRUCK_BOX
+    INSP-&gt;&gt;MODE_TOPIC: Publish "navigation"
+    MODE_TOPIC-&gt;&gt;ULTR: String Message
+    ULTR-&gt;&gt;ULTR: Check Current Mode
+    ULTR-&gt;&gt;ULTR: Switch to MODEL1
+    ULTR-&gt;&gt;MODEL1: Activate yolov8m-seg.pt
+    Note over ULTR,MODEL1: Processing truck detections
+    
+    Note over INSP: State: WAIT_WHEEL_BOX
+    INSP-&gt;&gt;MODE_TOPIC: Publish "inspection"
+    MODE_TOPIC-&gt;&gt;ULTR: String Message
+    ULTR-&gt;&gt;ULTR: Check Current Mode
+    ULTR-&gt;&gt;ULTR: Switch to MODEL2
+    ULTR-&gt;&gt;MODEL2: Activate best.pt
+    Note over ULTR,MODEL2: Processing wheel detections
+</div><hr>
+<h2 id="6-key-algorithms">6. Key Algorithms </h2>
+<h3 id="61-wheel-selection-algorithm">6.1 Wheel Selection Algorithm </h3>
+<p>The system uses a sophisticated algorithm to select the next wheel for inspection:</p>
+<ol>
+<li><strong>Filter by Label</strong>: Extract all wheels from detection message</li>
+<li><strong>Get Robot Position</strong>: Query TF tree for current robot pose</li>
+<li><strong>Filter Inspected</strong>: Remove wheels already visited (using position tolerance)</li>
+<li><strong>Filter by Truck Proximity</strong>: Remove wheels too far from current truck (&gt;5m)</li>
+<li><strong>Select Nearest</strong>: Choose wheel closest to robot's current position</li>
+<li><strong>Navigate</strong>: Send navigation goal to selected wheel</li>
+</ol>
+<p><strong>Pseudocode:</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>function find_wheel_for_inspection(boxes):
+    wheels = filter_by_label(boxes, "wheel")
+    robot_pos = get_current_pose()
+    truck_pos = get_truck_position()
+    
+    un_inspected = []
+    for wheel in wheels:
+        if not is_inspected(wheel) and is_near_truck(wheel, truck_pos):
+            un_inspected.append(wheel)
+    
+    if un_inspected:
+        return nearest_to_robot(un_inspected, robot_pos)
+    return None
+</code></pre><h3 id="62-recovery-rotation-strategy">6.2 Recovery Rotation Strategy </h3>
+<p>When objects are not detected, the system implements a recovery strategy:</p>
+<ol>
+<li><strong>Timeout Detection</strong>: Wait for configurable timeout (default 5s)</li>
+<li><strong>Rotation</strong>: Rotate 45° increments</li>
+<li><strong>Max Attempts</strong>: Up to 8 rotations (360° total)</li>
+<li><strong>State Transition</strong>: After max attempts, move to next phase</li>
+</ol>
+<p>This ensures the robot explores all viewing angles before giving up.</p>
+<hr>
+<h2 id="7-message-flow-architecture">7. Message Flow Architecture </h2>
+<h3 id="71-topic-communication-diagram">7.1 Topic Communication Diagram </h3>
+<div class="mermaid">graph TB
+    subgraph Vision["Vision Topics"]
+        T1["camera/image_raw&lt;br/&gt;sensor_msgs/Image"]
+        T2["camera/depth/points&lt;br/&gt;sensor_msgs/PointCloud2"]
+        T3["ultralytics/segmentation/objects_segment&lt;br/&gt;segmentation_msgs/ObjectsSegment"]
+        T4["detections_3d&lt;br/&gt;gb_visual_detection_3d_msgs/BoundingBoxes3d"]
+    end
+    
+    subgraph Control["Control Topics"]
+        T5["segmentation_mode&lt;br/&gt;std_msgs/String"]
+        T6["inspection_state&lt;br/&gt;std_msgs/String"]
+        T7["navigate_to_pose&lt;br/&gt;nav2_msgs/action/NavigateToPose"]
+    end
+    
+    T1 --&gt; ULTR[Ultralytics Node]
+    T5 --&gt; ULTR
+    ULTR --&gt; T3
+    T3 --&gt; PROC[Processor Node]
+    T2 --&gt; PROC
+    PROC --&gt; T4
+    T4 --&gt; INSP[Inspection Manager]
+    INSP --&gt; T5
+    INSP --&gt; T6
+    INSP --&gt; T7
+    
+    style T1 fill:#FFE4B5
+    style T2 fill:#FFE4B5
+    style T3 fill:#90EE90
+    style T4 fill:#87CEEB
+    style T5 fill:#FF6347
+    style T6 fill:#FF6347
+    style T7 fill:#FFB6C1
+</div><h3 id="72-action-server-communication">7.2 Action Server Communication </h3>
+<div class="mermaid">sequenceDiagram
+    participant INSP as Inspection Manager
+    participant NAV2 as Nav2 Action Server
+    
+    INSP-&gt;&gt;NAV2: Send Goal (NavigateToPose)
+    NAV2--&gt;&gt;INSP: Goal Accepted
+    Note over NAV2: Planning &amp; Execution
+    NAV2--&gt;&gt;INSP: Feedback (optional)
+    NAV2--&gt;&gt;INSP: Result (SUCCEEDED/ABORTED/etc)
+    
+    Note over INSP: Status 4 = SUCCEEDED
+    Note over INSP: Status 2 = ABORTED
+    Note over INSP: Status 3 = CANCELED
+</div><hr>
+<h2 id="8-configuration-and-parameters">8. Configuration and Parameters </h2>
+<h3 id="81-inspection-manager-parameters">8.1 Inspection Manager Parameters </h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>trucks_file</code></td>
+<td><code>config/trucks.yaml</code></td>
+<td>Path to truck positions configuration</td>
+</tr>
+<tr>
+<td><code>standoff_distance</code></td>
+<td>2.0 m</td>
+<td>Distance from truck for initial approach</td>
+</tr>
+<tr>
+<td><code>approach_offset</code></td>
+<td>0.5 m</td>
+<td>Distance from truck for inspection</td>
+</tr>
+<tr>
+<td><code>wheel_offset</code></td>
+<td>0.4 m</td>
+<td>Distance from wheel for inspection</td>
+</tr>
+<tr>
+<td><code>truck_label</code></td>
+<td>"truck"</td>
+<td>Object label for truck detection</td>
+</tr>
+<tr>
+<td><code>wheel_label</code></td>
+<td>"wheel"</td>
+<td>Object label for wheel detection</td>
+</tr>
+<tr>
+<td><code>detection_timeout</code></td>
+<td>5.0 s</td>
+<td>Time to wait before recovery rotation</td>
+</tr>
+<tr>
+<td><code>rotation_angle</code></td>
+<td>0.785 rad</td>
+<td>Rotation increment (45°)</td>
+</tr>
+<tr>
+<td><code>max_rotation_attempts</code></td>
+<td>8</td>
+<td>Maximum rotation attempts (360°)</td>
+</tr>
+<tr>
+<td><code>wheel_position_tolerance</code></td>
+<td>0.5 m</td>
+<td>Distance threshold for duplicate wheels</td>
+</tr>
+<tr>
+<td><code>max_wheel_distance_from_truck</code></td>
+<td>5.0 m</td>
+<td>Maximum distance wheel can be from truck</td>
+</tr>
+</tbody>
+</table>
+<h3 id="82-segmentation-parameters">8.2 Segmentation Parameters </h3>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>navigation_model</code></td>
+<td><code>yolov8m-seg.pt</code></td>
+<td>YOLO model for truck detection</td>
+</tr>
+<tr>
+<td><code>inspection_model</code></td>
+<td><code>best.pt</code></td>
+<td>YOLO model for wheel detection</td>
+</tr>
+<tr>
+<td><code>mode_topic</code></td>
+<td><code>/segmentation_mode</code></td>
+<td>Topic for mode switching</td>
+</tr>
+<tr>
+<td><code>default_mode</code></td>
+<td><code>navigation</code></td>
+<td>Initial segmentation mode</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="9-error-handling-and-recovery">9. Error Handling and Recovery </h2>
+<h3 id="91-error-recovery-flow">9.1 Error Recovery Flow </h3>
+<div class="mermaid">flowchart TD
+    START[Normal Operation] --&gt; ERROR{Error Detected?}
+    ERROR --&gt;|No| START
+    ERROR --&gt;|Yes| CHECK_TYPE{Error Type}
+    
+    CHECK_TYPE --&gt;|Navigation Failed| NAV_RECOVERY[Retry Navigation Goal]
+    CHECK_TYPE --&gt;|No Detection| ROTATE[Rotate 45°]
+    CHECK_TYPE --&gt;|TF Error| TF_FALLBACK[Use Config Position]
+    CHECK_TYPE --&gt;|Max Rotations| SKIP[Skip to Next Phase]
+    
+    NAV_RECOVERY --&gt; START
+    ROTATE --&gt; CHECK_ATTEMPTS{Attempts &lt; Max?}
+    CHECK_ATTEMPTS --&gt;|Yes| START
+    CHECK_ATTEMPTS --&gt;|No| SKIP
+    TF_FALLBACK --&gt; START
+    SKIP --&gt; START
+    
+    style ERROR fill:#FF6347
+    style SKIP fill:#FFA500
+</div><h3 id="92-resilience-features">9.2 Resilience Features </h3>
+<ol>
+<li><strong>Timeout Handling</strong>: Automatic recovery rotation if detections timeout</li>
+<li><strong>Rotation Recovery</strong>: Systematic 360° exploration before giving up</li>
+<li><strong>Position Tracking</strong>: Prevents duplicate wheel inspections</li>
+<li><strong>Truck Filtering</strong>: Ensures wheels belong to correct truck</li>
+<li><strong>TF Fallback</strong>: Uses configuration data if transforms unavailable</li>
+</ol>
+<hr>
+<h2 id="10-performance-characteristics">10. Performance Characteristics </h2>
+<h3 id="101-system-timing">10.1 System Timing </h3>
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>Typical Duration</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Model Switching</td>
+<td>&lt; 100 ms</td>
+<td>Instantaneous model activation</td>
+</tr>
+<tr>
+<td>Segmentation</td>
+<td>50-200 ms</td>
+<td>Depends on image resolution</td>
+</tr>
+<tr>
+<td>3D Processing</td>
+<td>100-500 ms</td>
+<td>Point cloud processing time</td>
+</tr>
+<tr>
+<td>Navigation Planning</td>
+<td>100-1000 ms</td>
+<td>Depends on path complexity</td>
+</tr>
+<tr>
+<td>Navigation Execution</td>
+<td>Variable</td>
+<td>Depends on distance and obstacles</td>
+</tr>
+<tr>
+<td>Recovery Rotation</td>
+<td>2-5 s</td>
+<td>45° rotation execution</td>
+</tr>
+</tbody>
+</table>
+<h3 id="102-resource-utilization">10.2 Resource Utilization </h3>
+<ul>
+<li><strong>CPU</strong>: Moderate (segmentation is GPU-accelerated if available)</li>
+<li><strong>Memory</strong>: ~0.5-1.2 GB (YOLO models loaded in memory)</li>
+<li><strong>Network</strong>: Low bandwidth (only control messages)</li>
+<li><strong>Storage</strong>: Model files (~100-500 MB per model)</li>
+</ul>
+<hr>
+<h2 id="11-future-enhancements">11. Future Enhancements </h2>
+<h3 id="111-potential-improvements">11.1 Potential Improvements </h3>
+<ol>
+<li><strong>Multi-Truck Parallel Processing</strong>: While navigating to the first truck and a detection of another truck is recived the vehicle could queue it for next inspection process without waiting to finish current truck and search for the second truck detection.</li>
+<li><strong>Adaptive Standoff Distance</strong>: Adjust based on truck size</li>
+<li><strong>Wheel Ordering</strong>: Intelligent sequence (front-left, front-right, etc.)</li>
+<li><strong>License Plate OCR</strong>: Extract and log license plate information<br>
+systems</li>
+</ol>
+<hr>
+<h2 id="12-conclusion">12. Conclusion </h2>
+<p>This autonomous truck inspection system demonstrates a complete integration of:</p>
+<ul>
+<li><strong>AI Vision</strong>: Dual-model YOLO segmentation for different mission phases</li>
+<li><strong>3D Perception</strong>: Accurate 3D bounding box generation from 2D masks</li>
+<li><strong>Autonomous Navigation</strong>: Robust path planning and execution</li>
+<li><strong>State Machine Control</strong>: Reliable mission orchestration</li>
+<li><strong>Error Recovery</strong>: Resilient operation in dynamic environments</li>
+</ul>
+<p>The system is production-ready, configurable, and extensible for future enhancements. The modular architecture allows for easy integration with additional sensors, models, or mission types.</p>
+<hr>
+<h2 id="visual-results">Visual Results </h2>
+<h3 id="autonomous-navigation-to-truck-position-not-accurate-position">Autonomous navigation to truck position (Not accurate position) </h3>
+<p><img src="image1.png" alt="Truck Detection"></p>
+<h3 id="3d-truck-detection-and-segmentation--used-for-navigation">3D truck detection and segmentation  used for navigation </h3>
+<p><img src="image2.png" alt="3D Bounding Boxes"></p>
+<h3 id="3d-wheel-detection--and-navigation-to-the-inspected-wheel">3D wheel detection  and navigation to the inspected wheel </h3>
+<p><img src="image3.png" alt="Wheel Detection"></p>
+<h3 id="another-wheel-detection-and-navigation-to-inspection">Another wheel detection and navigation to inspection </h3>
+<p><img src="image4.png" alt="Robot Approaching Wheel"></p>
+<hr>
+
+      </div>
+      
+      
+    
+    
+    <script type="module">
+// TODO: If ZenUML gets integrated into mermaid in the future,
+//      we can remove the following lines.
+
+
+var MERMAID_CONFIG = ({"startOnLoad":false});
+if (typeof MERMAID_CONFIG !== 'undefined') {
+  MERMAID_CONFIG.startOnLoad = false
+  MERMAID_CONFIG.cloneCssStyles = false
+  MERMAID_CONFIG.theme = "default"
+}
+
+mermaid.initialize(MERMAID_CONFIG || {})
+if (typeof(window['Reveal']) !== 'undefined') {
+  function mermaidRevealHelper(event) {
+    var currentSlide = event.currentSlide
+    var diagrams = currentSlide.querySelectorAll('.mermaid')
+    for (var i = 0; i < diagrams.length; i++) {
+      var diagram = diagrams[i]
+      if (!diagram.hasAttribute('data-processed')) {
+        mermaid.init(null, diagram, ()=> {
+          Reveal.slide(event.indexh, event.indexv)
+        })
+      }
+    }
+  }
+  Reveal.addEventListener('slidetransitionend', mermaidRevealHelper)
+  Reveal.addEventListener('ready', mermaidRevealHelper)
+  await mermaid.run({
+    nodes: document.querySelectorAll('.mermaid')
+  })
+} else {
+  await mermaid.run({
+    nodes: document.querySelectorAll('.mermaid')
+  })
+}
+</script>
+    
+    
+    
+  
+    </body></html>

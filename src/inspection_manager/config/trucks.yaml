@@ -1,0 +1,12 @@
+trucks:
+  - id: truck_1
+    x: 12.0
+    y: -18.0
+    z: 0.0
+    yaw: 1.5
+  - id: truck_2
+    x: 10.0
+    y: -1.0
+    z: 0.0
+    yaw: 1.57
+

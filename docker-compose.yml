@@ -4,6 +4,7 @@ services:
   nav2_humble:
     image: osrf/ros:humble-desktop-full
     container_name: nav2_humble
+    runtime: nvidia
 
     # 🖼️ GUI and X11 Forwarding
     environment:
@@ -16,7 +17,9 @@ services:
       resources:
         reservations:
           devices:
-            - capabilities: [gpu]
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
 
     # 🗂️ Mount your local workspace (./src → /root/nav2_ws/src)
     volumes:
