@@ -33,11 +33,11 @@ def generate_launch_description():
 
     # Declare the launch arguments
     declare_x_position_cmd = DeclareLaunchArgument(
-        'x_pose', default_value='0.0',
+        'x_pose', default_value='20.0',
         description='Specify namespace of the robot')
 
     declare_y_position_cmd = DeclareLaunchArgument(
-        'y_pose', default_value='0.0',
+        'y_pose', default_value='-17.0',
         description='Specify namespace of the robot')
 
     start_gazebo_ros_spawner_cmd = Node(
